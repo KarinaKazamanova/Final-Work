@@ -25,3 +25,19 @@ void Print (string [] a)
         System.Console.Write($"'{a[i]}', ");
     }
 }
+string Delete (string text, char ValueForDelete)
+{
+    string result = string.Empty;
+    int length = text.Length;
+    int i = 0;
+    while (i<length)
+    {
+        if (text [i] != ValueForDelete) 
+        {
+            result += $"{text [i]}"; 
+            i++ ;
+        }
+        else i++;
+    }
+    return result;
+}
