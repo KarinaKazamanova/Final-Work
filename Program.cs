@@ -3,7 +3,7 @@ string? input = Console.ReadLine();
 string  input1 = Delete (input, '[');
 string  input2 = Delete (input1, ']');
 string  input3 = Delete (input2, '"');    
-string[] figure = input3.Split(",");
+string[] figure = input3.Split(", ");
 string [] b = NoMoreThanThree (figure);
 Print (b);
 string [] NoMoreThanThree (string [] a)
