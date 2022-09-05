@@ -1,10 +1,10 @@
 ﻿System.Console.WriteLine("Введите массив");
-string? coordinates = Console.ReadLine();
-string  coordinates1 = Replace (coordinates, ',' ,' ');
-string  coordinates2 = Delete (coordinates1, ')');
-string  coordinates3 = Delete (coordinates2, '(');  
-string[] figure = coordinates3.Split(" ");
-string [] b = NoMoreThanThree ( a);
+string? input = Console.ReadLine();
+string  input1 = Delete (input, '[');
+string  input2 = Delete (input1, ']');
+string  input3 = Delete (input2, '"');    
+string[] figure = input3.Split(",");
+string [] b = NoMoreThanThree (figure);
 Print (b);
 string [] NoMoreThanThree (string [] a)
 {
