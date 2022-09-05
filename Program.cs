@@ -22,7 +22,18 @@ void Print (string [] a)
 {
     for (int i = 0; i <a.Length; i ++)
     {
-        System.Console.Write($"'{a[i]}', ");
+        if (i==0)
+        {
+            System.Console.Write($"['{a[i]}', ");
+        }
+        else if (i==a.Length-1)
+        {
+            System.Console.Write($"'{a[i]}'] ");
+        }
+        else
+        {
+            System.Console.Write($"'{a[i]}', ");
+        }
     }
 }
 string Delete (string text, char ValueForDelete)
